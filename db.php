@@ -6,7 +6,7 @@ $conn = mysqli_connect("localhost", "root", "", "phptask");
 
 if($conn)
 {
-	echo "Server Connection Established";
+	// echo "Server Connection Established";
 }
 else{
 	die("Mysql Connection Error. " . mysqli_error($conn) );

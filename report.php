@@ -46,7 +46,7 @@
 
                 <h2>All Submission Report</h2>
     
-                <form method="get">
+                <form method="get" action="">
                     <label for="user_id">Search by User ID: </label>
                     <input type="text" id="user_id" name="user_id">
                     <button type="submit">Search</button>
@@ -123,5 +123,5 @@
 </html>
 
 <?php
-    mysqli_close($conn);
+    // mysqli_close($conn);
 ?>
