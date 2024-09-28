@@ -20,7 +20,8 @@ Step 4: Add Project Files
 
     2. Import phpform.sql to MySQL database    
 
-    3. Open this all files
+    3. Open this all files(localhost/php_form_task)
+
 
 
 

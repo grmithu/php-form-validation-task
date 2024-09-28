@@ -1,8 +1,9 @@
 <?php
 
-include "db.php"; // Include your database connection file
+include "db.php";
 
-class SubmissionHandler {
+
+class SubmissionHandler{
     private $conn;
     private $data;
 
@@ -42,6 +43,7 @@ class SubmissionHandler {
         return true;
     }
 
+
     // Insert submission into the database
     public function insertSubmission() {
         // Validate the data
@@ -79,10 +81,12 @@ class SubmissionHandler {
             // Execute the query
             if ($stmt->execute()) {
                 header("Location: report.php"); // Redirect on success
-            } else {
+            } 
+            else {
                 die("Error inserting data: " . $this->conn->error);
             }
-        } else {
+        } 
+        else {
             die("Error preparing statement: " . $this->conn->error);
         }
     }
@@ -105,4 +109,5 @@ $data = [
 $submissionHandler = new SubmissionHandler($conn, $data);
 $submissionHandler->insertSubmission();
 
-?>
+
+

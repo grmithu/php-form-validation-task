@@ -2,30 +2,6 @@
 	include "db.php"; 
 ?>
 
-<?php
-
-// Hostname, Username, User Password, DB Name
-// $conn = mysqli_connect("localhost", "root", "", "phptask");
-
-// if($conn)
-// {
-// 	echo "Server Connection Established";
-// }
-// else{
-// 	die("Mysql Connection Error. " . mysqli_error($conn) );
-// }
-
-    // // Fetch submissions
-    // $user_id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
-    // if ($user_id) {
-    //     $sql = "SELECT * FROM submissions WHERE entry_by = '$user_id'";
-    // } 
-    // else {
-    //     $sql = "SELECT * FROM submissions";
-    // }
-    // $result = mysqli_query($conn, $sql);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,15 +50,6 @@
 
                         <?php 
 
-                            // Fetch submissions
-                            // $user_id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
-                            // if ($user_id) {
-                            //     $sql = "SELECT * FROM submissions WHERE entry_by = '$user_id'";
-                            // } 
-                            // else {
-                            //     $sql = "SELECT * FROM submissions";
-                            // }
-
                             $sql = "SELECT * FROM submissions ORDER BY id DESC";
                             
                             $result = mysqli_query($conn, $sql);    
@@ -117,11 +84,6 @@
 
 
 
-    
-
 </body>
 </html>
 
-<?php
-    // mysqli_close($conn);
-?>
